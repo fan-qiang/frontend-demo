@@ -19,7 +19,7 @@ process.exit(0)
 
 function createAppDir(dirName) {
     assertNotEmptyArg(dirName);
-    assertNotExists(dirName);
+    assertNotExists(currentDir + dirName);
     fs.mkdirSync(currentDir + dirName);
 }
 
@@ -38,7 +38,7 @@ function wirteFileSet(fileSet) {
 }
 
 function assertNotExists(dirName) {
-    if (fs.existsSync(currentDir + dirName)) {
+    if (fs.existsSync(dirName)) {
         console.error("error: dir %s exists", dirName);
         process.exit(1);
     }
