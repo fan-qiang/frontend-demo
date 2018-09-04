@@ -1,0 +1,63 @@
+body{
+    background: black;
+    color:red;
+    margin: 0;
+}
+.clearfix::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.topNaviBar{
+    padding: 20px 16px 20px 16px;
+}
+.topNaviBar .logo{
+    font-size: 24px;
+    font-family: "Arial Black";
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+ .topNaviBar .logo .rs{
+    margin-right: 4px;
+    color: #f1686d;
+}
+.topNaviBar .log .card{
+    color: #9a9da2;
+}
+
+.topNaviBar > nav{
+    float: right;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.topNaviBar > nav > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topNaviBar > nav > ul > li{
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.topNaviBar > nav > ul > li > a{
+    color: #b7b7b7;
+    font-size: 12px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #00aaf1;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.topNaviBar nav > ul > li > a:hover{
+    border-bottom: 3px solid #00aaf1;
+}
